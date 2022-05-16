@@ -7,8 +7,10 @@ import java.util.List;
 public class CardGame {
     PopulateCardDeck populateCardDeck;
     List<Card> currentDeck;
+    String name;
 
     public CardGame(String name) {
+        this.name = name;
         this.populateCardDeck = new PopulateCardDeck();
         this.currentDeck = populateCardDeck.loadDeck();
     }
